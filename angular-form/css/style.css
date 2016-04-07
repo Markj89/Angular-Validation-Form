@@ -1,0 +1,237 @@
+@charset "UTF-8";
+* {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article,aside,details,figcaption,
+figure,footer,header,hgroup,
+main,nav,section,summary{display:block;}
+
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline;}audio:not([controls]){display:none;height:0;}[hidden],template{display:none;}a{background:transparent;}a:active,a:hover{outline:0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}h1{font-size:2em;}mark{background:#ff0;color:#000;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:1em 40px;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}pre{overflow:auto;}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em;}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0;}button{overflow:visible;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}input{line-height:normal;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="email"]{-webkit-appearance:none;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}fieldset{margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}textarea{overflow:auto;}optgroup{font-weight:bold;}table{border-collapse:collapse;border-spacing:0;}td,th{padding:0;}.container,.post-body,.subscribe,.sep{*zoom:1;margin-left: 15px; margin-right:15px;}.container:after,.post-body:after,.subscribe:after,.sep:after{content:'';display:table;line-height:0;clear:both;}
+img {
+	max-width: 100%;
+	line-height: 0;
+	vertical-align: middle;
+}
+body {}
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	 content: none;
+}
+a {}
+	/* ============================================= */
+	/*                 Forms                         */
+	/* ============================================= */
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="number"],
+	input[type="date"],
+	input[type="time"]  {
+		height: 31px;
+		padding-left: 5px;
+		width: 100%;
+		border-radius: 4px;
+		border: 1px solid #ddd;
+		background-color: #F7F5F5;
+		margin-bottom: 15px;
+		color: #222;
+		font-weight: 500;
+	}
+	input[type="date"],
+	input[type="time"] {
+		height: 31px;
+		padding-left: 5px;
+	}
+	textarea {
+	  width: 100%;
+	  display: block;
+	  padding-left: 3px;
+	  background-color: #F7F5F5;
+	  border-radius: 2px;
+	  border: 1px solid #999;
+	}
+	input { 
+		-moz-box-shadow: 0px 0px 5px gray;
+		-webkit-box-shadow: 0px 0px 5px gray;
+		box-shadow: 0px 0px 5px gray;
+		border-radius: 2px;
+	 	outline: none;
+	}
+	input:required { 
+		-moz-box-shadow: 0px 0px 5px gray;
+		-webkit-box-shadow: 0px 0px 5px gray;
+		box-shadow: 0px 0px 5px gray;
+		border-radius: 2px;
+	 	outline: none;
+	}
+	input:invalid, textarea:invalid   {
+	  -moz-box-shadow: 0px 0px 5px red;
+	  -webkit-box-shadow: 0px 0px 5px red;
+	  box-shadow: 0px 0px 5px red;
+	  border-radius: 2px;
+	  outline: none;
+	}
+	input:valid, textarea:valid {
+	  -moz-box-shadow: 0px 0px 5px gray;
+	  -webkit-box-shadow: 0px 0px 5px gray;
+	  box-shadow: 0px 0px 5px gray;
+	  border-radius: 2px;
+	  outline: none;
+	}
+	input:focus, textarea:focus {
+	  -moz-box-shadow: 0px 0px 5px gray;
+	  -webkit-box-shadow: 0px 0px 5px gray;
+	  box-shadow: 0px 0px 5px gray;
+	  border-radius: 2px;
+	  outline: none;
+	}
+	form .form-bottom .input-error { border-color: rgb(227,11,37); }
+	input, select { vertical-align: middle; }
+	select, input, textarea, button { font: 99% sans-serif; }
+	body, select, input, textarea { color: #444; }
+	h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+	html {
+	  overflow-y: scroll;
+	  overflow: hidden;
+	  height: 100%;
+	}
+	.dropdown { width: 225px; }
+	label { display: block; }
+	fieldset {
+	  margin: 0 2px;
+	  padding: 0.35em 0.625em 0.30em;
+	}
+	.ng-valid {}
+	.ng-invalid     { 
+		color: #e30b25; 
+		font-weight: 800; 
+	}
+	.ng-pristine {}
+	.ng-dirty {}
+	.data-ng-touched {}
+	.minlength { color: red; }
+
+	/* really specific css rules applied by angular */
+	.ng-invalid-required  { color: red; font-weight: 800; }
+	.ng-invalid-minlength { color: red; font-weight: 800; }
+	.ng-invalid-maxlength { color: red; font-weight: 800; }
+	.ng-valid-max-length  { color: red; font-weight: 800; }
+	.form-border{
+	  background-color: ;
+	  padding-left: 10px;
+	  margin-top:  0px;
+	  padding-top: 12px;
+	}
+	.form-border p {
+	  color: #fff;
+	  font-size: 1em;
+	  font-weight: 400;
+	  letter-spacing: 0.5px;
+	  text-rendering: optimizeLegibility;
+	}
+	.form-results {
+		background-color: #fff;
+		border-radius: 4px;
+		-webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+		box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+		-o-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+		padding-bottom: 25px;
+	}
+	
+.results {
+  background-color: #fff;
+  padding: 10px 20px 0px 20px;
+}
+@media (max-width: 991px) {
+  .results {
+    margin-top: 20px;
+  }
+}
+input, select { vertical-align: middle; }
+select, input, textarea, button { font: 99% sans-serif; }
+body, select, input, textarea { color: #444; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+html {
+  overflow-y: scroll;
+  overflow: hidden;
+  height: 100%;
+}
+.hidden { display: none; }
+.clear { clear: both; }
+.left { float: left; }
+.right { float: right; }
+a:hover, a:active { outline: none; }
+ul, ol { list-style: none; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; }
+small { font-size: 85%; }
+#important { font-size: 1.6em; }
+textarea { overflow: auto; }
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+a:link {-webkit-tap-highlight-color: #FF5E99;}
+button {
+  width: auto;
+  overflow: visible;
+}
+#myForm {
+  position: relative;
+  box-sizing: border-box;
+}
+#myForm {
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/*inputs*/
+input,textarea {
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 1.1em;
+}
